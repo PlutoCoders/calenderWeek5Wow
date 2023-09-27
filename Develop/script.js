@@ -21,3 +21,6 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+
+
+// creating a timer - week 5, 24, js (day.js)
