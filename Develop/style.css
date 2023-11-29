@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  background-color: aquamarine;
+  background-color: rgb(32, 18, 119);
 }
 
 textarea {
@@ -69,5 +69,5 @@ div#dateTime {
 }
 
 header{
-  background-color: #09ff00;
+  background-color: #293fae;
 }

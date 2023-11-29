@@ -24,13 +24,22 @@ $(function () {
 
   retrieveLocalStorage()
 
-  
+  function refreshTimeBlocks() {
+    var currentHour = moment().hour();
+    $(".time-block").each(function () {
+      const timeTimeBlocks = parseInt($(this).attr("id").split("-")[1]);
 
-
-
+    // if else statements to add/remove (present future past) classes
+      if (timeTimeBlocks < currentHour) {
+        $(this).addClass("past").removeClass(`present future`);
+      } else if (timeTimeBlocks === currentHour) {
+        $(this).addClass("present").removeClass("past future");
+      } else {
+        $(this).addClass("future").removeClass("past present");
+      }
+    });
+  }
+  // runs function TO UPDATE TIME BLOCK ^^
+  refreshTimeBlocks();
 });
-
-
-
-
 // creating a timer - week 5, 24, js (day.js)
