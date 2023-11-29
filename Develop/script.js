@@ -10,7 +10,17 @@ $(function () {
 
   updateDate();
 
-  // now we need to save to local storage
+  // Okay first i need to find all the elements with the class "time-block"
+  const timeBlocks = document.getElementsByClassName("time-block");
+  $(".saveBtn").on("click", function () {
+    var userText = $(this).siblings(".description").val();
+    var timeBlock = $(this).parent().attr("id");
+    localStorage.setItem(timeBlock, userText);
+    console.log("Event Saved");
+    alert("Event Saved");
+  });
+
+  // now we need to retrieve from local storage
   function retrieveLocalStorage() {
     $(".time-block").each(function () {
       var timeBlockId = $(this).attr("id");
@@ -39,6 +49,7 @@ $(function () {
       }
     });
   }
+
   // runs function TO UPDATE TIME BLOCK ^^
   refreshTimeBlocks();
 });
