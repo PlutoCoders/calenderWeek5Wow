@@ -1,14 +1,13 @@
 # calenderWeek5Wow
 Assignment for week 5
 
-# In this assignment we are creating a personaly daily calender!
-- It will display the current date, and have sections for the hours of the day
-- Each section will have text that the user can alter to give a description to that part of the day
-- Furthermore, the sections will be color coded for hours that have passed, the current hour, and future hours.
+# In this assignment we are creating a day planner scheduler
+- It will display the current date and have sections for the hours of the day
+- Each section will have text that the user can alter
+- Sections are color coded for hours that have passed, the current hour, and future
 
 # Repo Layout
-- The main code is contained in the script.js file, where we manipulate the index.html
-- Assets folder can be ignored
+- The main code is contained in the script.js file
 - style.css, script.js, and index.html are all inside the develop folder.
 
 ## Credits
@@ -20,4 +19,4 @@ Assignment for week 5
 - I had some help from a tutor to help me understand concepts
 - I asked a few questions in office hours pertaining to homework related concepts
 - I used chat gpt and google to look for quick references
-- I had help from my brother and my new tutor!
+- I did this project with my brother Furk, with lots of support from our tutor Rakib
