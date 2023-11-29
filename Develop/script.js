@@ -10,6 +10,21 @@ $(function () {
 
   updateDate();
 
+  // now we need to save to local storage
+  function retrieveLocalStorage() {
+    $(".time-block").each(function () {
+      var timeBlockId = $(this).attr("id");
+      var storedValue = localStorage.getItem(timeBlockId);
+      if (storedValue !== null) {
+        // after retrieve, set
+        $(this).find(".description").val(storedValue);
+      }
+    });
+  }
+
+  retrieveLocalStorage()
+
+  
 
 
 
